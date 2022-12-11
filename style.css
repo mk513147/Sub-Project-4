@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    --red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --graphicText: hsl(167, 40%, 24%);
+    --photoText: hsl(198, 62%, 26%);
+    --desatBlue: hsl(212, 27%, 19%);
+    --vdGrayBlue: hsl(213, 9%, 39%);
+    --dGrayBlue: hsl(232, 10%, 55%);
+    --grayBlue: hsl(210, 4%, 67%);
+    --footer: hsl(168, 34%, 41%);
+    --barlow: 'Barlow', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: var(--barlow);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    position: relative;
+    height: 82vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+header>picture>img {
+    position: absolute;
+    width: 100%;
+}
+
+
+nav {
+    font-size: 16px;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-size: 1.2em;
+    color: white;
+}
+
+nav>svg {
+    display: none;
+}
+
+.contactBtn {
+    border: 0;
+    outline: 0;
+    background: white;
+    color: black;
+    padding: 1rem 2rem;
+    font-family: var(--fraunces);
+    border-radius: 30px;
+}
+
+.contactBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: 0.1s;
+}
+
+header>blockquote {
+    position: relative;
+    font-family: var(--fraunces);
+    width: 100%;
+    color: white;
+    font-size: 3em;
+    top: 6rem;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.downArrow {
+    position: relative;
+    top: 12rem;
+    text-align: center;
+}
+
+
+/* ____________MAIN____________ */
+
+main {
+    display: grid;
+    grid-template-areas: 'text1 img1'
+        'img2 text2'
+        'textImg1 textImg2';
+    width: 100%;
+}
+
+.text1 {
+    grid-area: text1;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.textImg1 {
+    grid-area: textImg1;
+}
+
+.textImg2 {
+    grid-area: textImg2;
+}
+
+.textBox,
+.imgBox,
+.textImgBox {
+    height: 600px;
+    font-family: var(--fraunces);
+}
+
+article {
+    font-family: var(--barlow);
+}
+
+.textBox {
+    padding: 9rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textBox>p {
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.textBox>article {
+    color: var(--dGrayBlue);
+}
+
+.textBoxBtn {
+    background: transparent;
+    outline: 0;
+    border: 0;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 10;
+}
+
+.textBoxBtn>p {
+    padding-left: 0.5rem;
+}
+
+.line {
+    width: 8vw;
+    height: 0.5rem;
+    position: relative;
+    top: -0.4rem;
+    border-radius: 35px;
+    filter: opacity(0.4);
+    z-index: -10;
+}
+
+.textBoxBtn:hover .line {
+    filter: opacity(0.9);
+    transition: 0.2s;
+}
+
+.imgBox>picture {
+    position: absolute;
+}
+
+.textImgBox {
+    position: relative;
+}
+
+.imgText {
+    position: absolute;
+    top: 25rem;
+    text-align: center;
+    padding: 0 10rem;
+}
+
+.head {
+    font-size: 2em;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
+/* _______TESTIMONIALS___________ */
+
+.testimonials {
+    padding: 8rem 0;
+    width: 100%;
+}
+
+.testimonials>p {
+    letter-spacing: 3px;
+    font-family: var(--fraunces);
+    text-align: center;
+    margin: 3rem 0;
+    color: var(--grayBlue);
+}
+
+.msgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.msgBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    height: 20rem;
+}
+
+.msgBox>img {
+    border-radius: 50%;
+    height: 5rem;
+}
+
+.msgBox>article {
+    text-align: center;
+    line-height: 2rem;
+    color: var(--vdGrayBlue);
+}
+
+.info {
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+    font-family: var(--fraunces);
+    margin-bottom: 0.7rem;
+}
+
+.designation {
+    color: var(--grayBlue);
+}
+
+/* ______IMAGEGALLERY__________ */
+
+.imageGallery {
+    display: flex;
+    width: 100%;
+}
+
+.imageGallery picture {
+    height: 26.3rem;
+}
+
+.imageGallery img {
+    height: 26.3rem;
+}
+
+/* _________FOOTER___________ */
+
+footer {
+    padding: 3rem 0;
+    background: hsl(168deg 34% 41% / 72%);
+    color: var(--graphicText);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--barlow);
+}
+
+footer>p {
+    font-weight: 800;
+    font-size: 2em;
+}
+
+footer>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin: 3rem 0;
+}
+
+footer ul>li:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.contact {
+    width: 15%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact>a {
+    text-decoration: none;
+}
+
+.contact svg:hover path {
+    fill: white;
+    transition: 0.2s;
+}
+
+
+/* ________MEDIA QUERIES_________ */
+
+@media (max-width: 425px) {
+    header {
+        height: 33rem;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    nav>svg {
+        display: block;
+    }
+
+    header>blockquote {
+        font-size: 2em;
+    }
+
+    .downArrow {
+        top: 8rem;
+    }
+
+    main {
+        grid-template-areas: 'img1'
+            'text1'
+            'img2'
+            'text2'
+            'textImg1'
+            'textImg2';
+    }
+
+    .textBox, .imgBox, .textImgBox {
+        height: unset;
+    }
+
+    .textBox {
+        height: 20rem;
+        padding: 1rem;
+    }
+
+    .imgBox>picture {
+        position: relative;
+    }
+
+    .imgBox img {
+        height: 20rem;
+    }
+
+    .textImgBox img {
+        height: 20rem;
+    }
+}
