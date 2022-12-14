@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/mk513147/advice-generator-app-main.git]
-- Live Site URL: [https://advo-gen.netlify.app/]
+- Solution URL: [https://github.com/mk513147/Sub-Project-4.git]
+- Live Site URL: [https://mk513147.github.io/Sub-Project-4/]
 
 
 ### Built with
