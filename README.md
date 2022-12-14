@@ -42,25 +42,17 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- API
 
 ### What I learned
 
-I learned how to use async function with API in this challenge.
-
-```js
-async function getAdvice() {
-    console.log("✨")
-  }
-```
+This challenge improved my skill.
 
 ### Continued development
 
-I want to learn more abut API's and how to use it on a website.
+I want to learn more about website designs.
 
 ### Useful resources
 
-- [https://loading.io/] - This website helped me to set loading screen reason. I really liked this website and will use it going forward.
 - [https://fonts.google.com/] - This is an amazing website which helped me in applaying amazing fonts to my website.
 
 
